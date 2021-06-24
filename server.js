@@ -55,7 +55,7 @@ app.post("/send", function (req, res) {
   });
 });
 
-const port = 3005;
-app.listen(process.env.PORT || port, () => {
-  console.log(`Server is running on port: ${port}`);
+
+app.listen(process.env.PORT || 3005, () => {
+  console.log('Server is running on port: 3005' );
 });
