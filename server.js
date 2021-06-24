@@ -55,7 +55,7 @@ app.post("/send", function (req, res) {
   });
 });
 
-
+app.get("/", (req, res) => res.send("welcome to a live server"));
 app.listen(process.env.PORT || 3005, () => {
   console.log('Server is running on port: 3005' );
 });
